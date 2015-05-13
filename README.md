@@ -25,7 +25,27 @@ to the require section of your `composer.json` file.
 Usage
 -----
 
+You need to add this to your application configuration:
+
+```php
+'components' => [
+    'authManager' => [
+        'class' => 'yii\rbac\DbManager',
+    ],
+],
+
+'modules' => [
+    'auth' => [
+        'class' => 'Jeff\auth\Module',
+    ],
+],
+
+php yii migrate --migrationPath=@yii/rbac/migrations/
+php yii migrate --migrationPath=@Jeff/auth/migrations/
+```
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= \Jeff\auth\Check::widget() ?>```
+if (!\Yii::$app->user->can('/site/dashboard')) {
+    throw new \yii\web\UnauthorizedHttpException(Yii::t('app', 'Has not obtained the authorization, please contact with the administrator.'));
+}
