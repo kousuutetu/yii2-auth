@@ -32,6 +32,10 @@ You need to add this to your application configuration:
     'authManager' => [
         'class' => 'yii\rbac\DbManager',
     ],
+    'user' => [
+        'identityClass' => 'Jeff\auth\models\UserIdentity',
+        'enableAutoLogin' => true,
+    ],
 ],
 
 'modules' => [
@@ -39,6 +43,10 @@ You need to add this to your application configuration:
         'class' => 'Jeff\auth\Module',
     ],
 ],
+
+vim common/models/LoginForm.php
+modify User to \Jeff\auth\models\UserIdentity
+
 
 php yii migrate --migrationPath=@yii/rbac/migrations/
 php yii migrate --migrationPath=@Jeff/auth/migrations/
