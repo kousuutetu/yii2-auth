@@ -51,6 +51,8 @@ modify User to \Jeff\auth\models\UserIdentity
 php yii migrate --migrationPath=@yii/rbac/migrations/
 php yii migrate --migrationPath=@Jeff/auth/migrations/
 ```
+default username is Jeff, password is 123456.
+
 Once the extension is installed, simply use it in your code by  :
 
 ```php
