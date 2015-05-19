@@ -5,7 +5,6 @@ namespace Jeff\auth\controllers;
 use Yii;
 use Jeff\auth\models\Permission;
 use Jeff\auth\models\PermissionSearch;
-use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 

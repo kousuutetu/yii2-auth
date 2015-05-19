@@ -6,6 +6,8 @@ class Module extends \yii\base\Module
 {
     public $controllerNamespace = 'Jeff\auth\controllers';
 
+    public $defaultRoute = 'permission';
+
     public function init()
     {
         parent::init();

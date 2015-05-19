@@ -6,7 +6,6 @@ use Yii;
 use Jeff\auth\models\Assignment;
 use Jeff\auth\models\Role;
 use yii\data\ActiveDataProvider;
-use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
