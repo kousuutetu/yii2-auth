@@ -35,7 +35,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 'description:ntext',
 
                 ['class' => 'yii\grid\ActionColumn', 'header' => Yii::t('app', 'Operations'), 'options' => ['width' => 85]],
-                ['class' => 'yii\grid\CheckboxColumn'],
+                ['class' => 'yii\grid\CheckboxColumn', 'options' => ['width' => 40]],
             ],
         ]); ?>
     <?php Panel::end() ?>
