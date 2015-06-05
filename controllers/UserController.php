@@ -109,7 +109,13 @@ class UserController extends Controller
      */
     public function actionDelete($id)
     {
-        $this->findModel($id)->delete();
+        $model = $this->findModel($id);
+        
+        if ($model && $model->username !== \Yii::$app->user->getIdentity()->username) {
+            $model->delete();
+        } else {
+            Yii::$app->getSession()->setFlash('error', 'You can\'t delete yourself.');
+        }
 
         return $this->redirect(['index']);
     }
