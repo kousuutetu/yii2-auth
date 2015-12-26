@@ -23,15 +23,6 @@ class m150512_032214_auth_user extends Migration
             'UNIQUE KEY `user-username` (`username`)',
             'UNIQUE KEY `user-email` (`email`)'
         ], $tableOptions);
-
-        $this->insert('auth_user', [
-            'username' => 'Jeff',
-            'password_hash' => \Yii::$app->security->generatePasswordHash('123456'),
-            'email' => 'kousuutetu@163.com',
-            'auth_key' => \Yii::$app->security->generateRandomString(),
-            'created_at' => time(),
-            'updated_at' => time(),
-        ]);
     }
 
     public function down()

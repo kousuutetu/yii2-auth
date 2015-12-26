@@ -32,7 +32,7 @@ use Jeff\auth\models\Role;
 echo Html::tag('link', '', ['id' => 'current', 'href' => \yii\helpers\Url::current(['userId' => null])]);
 $js = <<<EOF
 $('#assignment-user_id').change(function(){
-    var url = $('#current').attr('href') + '&userId=' + $(this).val();
+    var url = $('#current').attr('href') + '?userId=' + $(this).val();
     window.location.href = url;
 });
 EOF;
