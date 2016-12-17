@@ -1,11 +1,11 @@
 <?php
 
 use yii\helpers\Html;
-use Jeff\beyond\ActiveForm;
-use Jeff\auth\models\User;
+use maple\beyond\ActiveForm;
+use maple\auth\models\User;
 
 /* @var $this yii\web\View */
-/* @var $model Jeff\auth\models\User */
+/* @var $model maple\auth\models\User */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 

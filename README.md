@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist jeff/yii2-auth "*"
+php composer.phar require --prefer-dist maple/yii2-auth "*"
 ```
 
 or add
 
 ```
-"jeff/yii2-auth": "*"
+"maple/yii2-auth": "*"
 ```
 
 to the require section of your `composer.json` file.
@@ -33,25 +33,25 @@ You need to add this to your application configuration:
         'class' => 'yii\rbac\DbManager',
     ],
     'user' => [
-        'identityClass' => 'Jeff\auth\models\UserIdentity',
+        'identityClass' => 'maple\auth\models\UserIdentity',
         'enableAutoLogin' => true,
     ],
 ],
 
 'modules' => [
     'auth' => [
-        'class' => 'Jeff\auth\Module',
+        'class' => 'maple\auth\Module',
     ],
 ],
 
 vim common/models/LoginForm.php
-modify User to \Jeff\auth\models\UserIdentity
+modify User to \maple\auth\models\UserIdentity
 
 
 php yii migrate --migrationPath=@yii/rbac/migrations/
-php yii migrate --migrationPath=@Jeff/auth/migrations/
+php yii migrate --migrationPath=@maple/auth/migrations/
 ```
-default username is Jeff, password is 123456.
+default username is master, password is password.
 
 Once the extension is installed, simply use it in your code by  :
 

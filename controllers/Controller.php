@@ -1,6 +1,6 @@
 <?php
 
-namespace Jeff\auth\controllers;
+namespace maple\auth\controllers;
 
 class Controller extends \yii\web\Controller
 {

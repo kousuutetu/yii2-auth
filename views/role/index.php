@@ -1,11 +1,11 @@
 <?php
 
 use yii\helpers\Html;
-use Jeff\beyond\Panel;
-use Jeff\beyond\GridView;
+use maple\beyond\Panel;
+use maple\beyond\GridView;
 
 /* @var $this yii\web\View */
-/* @var $searchModel Jeff\auth\models\RoleSearch */
+/* @var $searchModel maple\auth\models\RoleSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = Yii::t('app', 'Roles');

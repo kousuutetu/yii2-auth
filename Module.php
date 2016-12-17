@@ -1,10 +1,10 @@
 <?php
 
-namespace Jeff\auth;
+namespace maple\auth;
 
 class Module extends \yii\base\Module
 {
-    public $controllerNamespace = 'Jeff\auth\controllers';
+    public $controllerNamespace = 'maple\auth\controllers';
 
     public $defaultRoute = 'permission';
 

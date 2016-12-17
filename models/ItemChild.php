@@ -1,6 +1,6 @@
 <?php
 
-namespace Jeff\auth\models;
+namespace maple\auth\models;
 
 use Yii;
 

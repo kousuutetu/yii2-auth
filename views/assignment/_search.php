@@ -1,10 +1,10 @@
 <?php
 
 use yii\helpers\Html;
-use Jeff\beyond\ActiveForm;
+use maple\beyond\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model Jeff\auth\models\AssignmentSearch */
+/* @var $model maple\auth\models\AssignmentSearch */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 

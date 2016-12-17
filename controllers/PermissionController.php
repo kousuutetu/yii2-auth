@@ -1,10 +1,10 @@
 <?php
 
-namespace Jeff\auth\controllers;
+namespace maple\auth\controllers;
 
 use Yii;
-use Jeff\auth\models\Permission;
-use Jeff\auth\models\PermissionSearch;
+use maple\auth\models\Permission;
+use maple\auth\models\PermissionSearch;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 

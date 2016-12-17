@@ -1,11 +1,11 @@
 <?php
 
-namespace Jeff\auth\controllers;
+namespace maple\auth\controllers;
 
 use Yii;
-use Jeff\auth\models\Role;
-use Jeff\auth\models\RoleSearch;
-use Jeff\auth\models\Permission;
+use maple\auth\models\Role;
+use maple\auth\models\RoleSearch;
+use maple\auth\models\Permission;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 

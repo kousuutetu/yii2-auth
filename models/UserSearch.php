@@ -1,14 +1,14 @@
 <?php
 
-namespace Jeff\auth\models;
+namespace maple\auth\models;
 
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use Jeff\auth\models\User;
+use maple\auth\models\User;
 
 /**
- * UserSearch represents the model behind the search form about `Jeff\auth\models\User`.
+ * UserSearch represents the model behind the search form about `maple\auth\models\User`.
  */
 class UserSearch extends User
 {

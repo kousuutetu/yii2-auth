@@ -1,14 +1,14 @@
 <?php
 
-namespace Jeff\auth\models;
+namespace maple\auth\models;
 
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use Jeff\auth\models\Assignment;
+use maple\auth\models\Assignment;
 
 /**
- * AssignmentSearch represents the model behind the search form about `Jeff\auth\models\Assignment`.
+ * AssignmentSearch represents the model behind the search form about `maple\auth\models\Assignment`.
  */
 class AssignmentSearch extends Assignment
 {

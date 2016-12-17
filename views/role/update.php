@@ -1,10 +1,10 @@
 <?php
 
 use yii\helpers\Html;
-use Jeff\beyond\Panel;
+use maple\beyond\Panel;
 
 /* @var $this yii\web\View */
-/* @var $model Jeff\auth\models\Role */
+/* @var $model maple\auth\models\Role */
 
 $this->title = Yii::t('app', 'Update');
 $this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Roles'), 'url' => ['index']];

@@ -8,9 +8,9 @@ class m151221_081858_auth_init extends Migration
     public function up()
     {
         $this->insert('auth_user', [
-            'username' => 'Jeff',
-            'password_hash' => \Yii::$app->security->generatePasswordHash('super.human'),
-            'email' => 'kousuutetu@163.com',
+            'username' => 'master',
+            'password_hash' => \Yii::$app->security->generatePasswordHash('password'),
+            'email' => 'i@dev.org',
             'auth_key' => \Yii::$app->security->generateRandomString(),
             'created_at' => time(),
             'updated_at' => time(),

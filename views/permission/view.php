@@ -1,11 +1,11 @@
 <?php
 
 use yii\helpers\Html;
-use Jeff\beyond\Panel;
+use maple\beyond\Panel;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
-/* @var $model Jeff\auth\models\Permission */
+/* @var $model maple\auth\models\Permission */
 
 $this->title = Yii::t('app', 'View');
 $this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Permissions'), 'url' => ['index']];

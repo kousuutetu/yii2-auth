@@ -1,5 +1,5 @@
 {
-    "name": "jeff/yii2-auth",
+    "name": "maple/yii2-auth",
     "description": "Yii2 Auth",
     "type": "yii2-extension",
     "keywords": ["yii2","extension"],
@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Jeff\\auth\\": ""
+            "maple\\auth\\": ""
         }
     }
 }

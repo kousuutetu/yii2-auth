@@ -1,10 +1,10 @@
 <?php
-namespace Jeff\auth\models;
+namespace maple\auth\models;
 
 use Yii;
 use yii\base\NotSupportedException;
 use yii\web\IdentityInterface;
-use Jeff\auth\models\User;
+use maple\auth\models\User;
 
 class UserIdentity extends \yii\base\Object implements IdentityInterface
 {

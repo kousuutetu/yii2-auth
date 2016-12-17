@@ -1,11 +1,11 @@
 <?php
 
 use yii\helpers\Html;
-use Jeff\beyond\ActiveForm;
-use Jeff\auth\models\Permission;
+use maple\beyond\ActiveForm;
+use maple\auth\models\Permission;
 
 /* @var $this yii\web\View */
-/* @var $model Jeff\auth\models\Role */
+/* @var $model maple\auth\models\Role */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 <?php

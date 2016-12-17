@@ -1,12 +1,12 @@
 <?php
 
 use yii\helpers\Html;
-use Jeff\beyond\Panel;
-use Jeff\beyond\GridView;
-use Jeff\auth\models\User;
+use maple\beyond\Panel;
+use maple\beyond\GridView;
+use maple\auth\models\User;
 
 /* @var $this yii\web\View */
-/* @var $searchModel Jeff\auth\models\UserSearch */
+/* @var $searchModel maple\auth\models\UserSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = Yii::t('app', 'Users');
