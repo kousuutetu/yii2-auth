@@ -12,6 +12,7 @@ class m151221_081858_auth_init extends Migration
             'password_hash' => \Yii::$app->security->generatePasswordHash('password'),
             'email' => 'i@dev.org',
             'auth_key' => \Yii::$app->security->generateRandomString(),
+            'level' => 20,
             'created_at' => time(),
             'updated_at' => time(),
         ]);
@@ -32,7 +33,7 @@ class m151221_081858_auth_init extends Migration
             ['name' => '/auth/user/delete', 'type' => 2, 'description' => '权限-用户-删除'],
             ['name' => '/auth/user/view', 'type' => 2, 'description' => '权限-用户-查看'],
             ['name' => '/auth/user/update', 'type' => 2, 'description' => '权限-用户-更新'],
-            ['name' => 'administrator', 'type' => 1, 'description' => '管理员'],
+            ['name' => 'administrator', 'type' => 1, 'description' => '超级管理员'],
         ];
         foreach ($item as $val) {
             $this->insert('auth_item', [
